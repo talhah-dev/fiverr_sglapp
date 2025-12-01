@@ -56,11 +56,11 @@ input:user-invalid {
 }
 
 .card-border-purple {
-  background: linear-gradient(180deg, #a855f7, #6366f1);
+  background: linear-gradient(180deg, #462f80, #462f80);
 }
 
 .card-border-pink {
-  background: linear-gradient(180deg, #fb7185, #ec4899);
+  background: linear-gradient(180deg, #5a3b72, #5a3b72);
 }
 
 .icon-glow-cyan {
@@ -80,7 +80,6 @@ input:user-invalid {
     0 0 10px rgba(244, 114, 182, 0.9),
     0 0 25px rgba(251, 113, 133, 0.9);
 }
-
 
 .faq-pill {
   background: linear-gradient(90deg, #22d3ee, #6366f1, #ec4899);
@@ -118,7 +117,7 @@ input:user-invalid {
 }
 
 .faq-pill {
-  background: linear-gradient(90deg, #22d3ee, #6366f1, #ec4899);
+  background: linear-gradient(90deg, #00DFFF, #18327A);
 }
 
 .faq-border {
@@ -126,7 +125,7 @@ input:user-invalid {
 }
 
 .faq-inner {
-  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.35), transparent 55%),
-    #020617;
+  background: radial-gradient(circle at top left, #0c6897, transparent 55%),
+    radial-gradient(circle at bottom right, #1b3790, transparent 55%),
+    #152467;
 }
