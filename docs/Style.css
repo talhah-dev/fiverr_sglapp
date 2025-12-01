@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   box-sizing: border-box;
   outline: none;
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 img,
@@ -34,4 +34,99 @@ a {
 
 input:user-invalid {
   border: 1.5px solid rgba(255, 0, 0, 0.416);
+}
+
+/* ----------- */
+
+
+.glow-text {
+  text-shadow:
+    /* 0 0 12px rgba(244, 244, 255, 0.9),
+    0 0 30px rgba(196, 181, 253, 0.9), */
+    0 0 20px #9320FF;
+}
+
+
+.news-pill {
+  background: linear-gradient(90deg, #22d3ee, #6366f1, #ec4899);
+}
+
+.card-border-cyan {
+  background: linear-gradient(180deg, #22d3ee, #0ea5e9);
+}
+
+.card-border-purple {
+  background: linear-gradient(180deg, #a855f7, #6366f1);
+}
+
+.card-border-pink {
+  background: linear-gradient(180deg, #fb7185, #ec4899);
+}
+
+.icon-glow-cyan {
+  text-shadow:
+    0 0 10px rgba(56, 189, 248, 0.9),
+    0 0 25px rgba(45, 212, 191, 0.9);
+}
+
+.icon-glow-purple {
+  text-shadow:
+    0 0 10px rgba(192, 132, 252, 0.9),
+    0 0 25px rgba(129, 140, 248, 0.9);
+}
+
+.icon-glow-pink {
+  text-shadow:
+    0 0 10px rgba(244, 114, 182, 0.9),
+    0 0 25px rgba(251, 113, 133, 0.9);
+}
+
+
+.faq-pill {
+  background: linear-gradient(90deg, #22d3ee, #6366f1, #ec4899);
+}
+
+/* Card borders */
+.faq-border {
+  background: linear-gradient(90deg, #22d3ee, #3b82f6, #6366f1);
+}
+
+/* Inner card background */
+.faq-inner {
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent 50%),
+    radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.35), transparent 50%),
+    #020617;
+}
+
+/* Smooth accordion animation */
+.faq-content {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-4px);
+  overflow: hidden;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.faq-item.open .faq-content {
+  max-height: 300px;
+  /* big enough for the text inside */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faq-pill {
+  background: linear-gradient(90deg, #22d3ee, #6366f1, #ec4899);
+}
+
+.faq-border {
+  background: linear-gradient(90deg, #22d3ee, #3b82f6, #6366f1);
+}
+
+.faq-inner {
+  background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.25), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.35), transparent 55%),
+    #020617;
 }

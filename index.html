@@ -7,7 +7,7 @@
 
     <title>new</title>
 
-   
+
     <!-- Styles & Scripts -->
     <link rel="stylesheet" href="/docs/Style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -22,14 +22,455 @@
 
 
 
-<body class="">
+<body class="bg-[#0a1137] ">
+
+    <img src="/docs/assets/images/bg.png" class="absolute top-0 left-0 w-full" alt="">
+    
+    <!-- Navbar -->
+    <header class="w-full relative max-w-7xl mx-auto mt-10">
+        <nav class="flex items-center justify-between rounded-[10px] bg-[#FFFFFF0D] px-4 py-3 md:px-10 md:py-4">
+
+            <div class="flex items-center gap-3">
+                <a href="">
+                    <img src="/docs/assets/images/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-10 text-lg text-slate-200 font-medium tracking-wide">
+                <a href="#inicio" class="relative transition-opacity hover:opacity-100 text-white">
+                    HInicioome
+                </a>
+                <a href="#caracteristicas" class="relative transition-opacity hover:opacity-100 text-white">
+                    Características
+                </a>
+                <a href="#noticias" class="relative transition-opacity hover:opacity-100 text-white">
+                    Noticias
+                </a>
+            </div>
+
+            <!-- Right Icons -->
+            <div class="flex items-center gap-3 md:gap-8">
+                <img src="/docs/assets/images/Profile.svg" class="h-8" alt="">
+                <img src="/docs/assets/images/Language.svg" class="h-9" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <section class="w-full relative flex justify-center px-4 py-16 md:py-24 text-white">
+        <div class="w-full text-center space-y-8">
+
+            <h1 class="glow-text font-bold leading-tight
+             text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[64px]">
+                Descubre, Colecciona<br class="hidden md:block" />
+                y Evoluciona Cartas
+            </h1>
+
+            <p class="mx-auto max-w-lg font-semibold md:text-xl text-white">
+                Colecciona cartas únicas, evoluciona mediante la
+                jugabilidad y compite con amigos.
+            </p>
+
+            <div class="mt-6 md:mt-14 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-14">
+                <!-- Stat 1 -->
+                <div class="flex items-center gap-4">
+                    <img src="/docs/assets/images/Page-1.svg" alt="">
+                    <div class="text-left leading-tight">
+                        <div class="text-lg md:text-2xl font-semibold">10000+</div>
+                        <div class=" text-[#FFFFFFD4]">
+                            eventos en vivo
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stat 2 -->
+                <div class="flex items-center gap-4">
+                    <img src="/docs/assets/images/Gamer.svg" alt="">
+                    <div class="text-left leading-tight">
+                        <div class="text-lg md:text-2xl font-semibold">2000+</div>
+                        <div class="  text-[#FFFFFFD4]">
+                            cartas coleccionadas
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stat 3 -->
+                <div class="flex items-center gap-4">
+                    <img src="/docs/assets/images/Event.svg" alt="">
+                    <div class="text-left leading-tight">
+                        <div class="text-lg md:text-2xl font-semibold">jugadores</div>
+                        <div class="  text-[#FFFFFFD4]">
+                            muy pronto
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4">
+                <a href="#" class="inline-flex items-center justify-center px-16 py-3.5
+               rounded-[10px] md:text-lg font-semibold
+               bg-gradient-to-r from-[#05AADF] to-[#A246FF]
+               hover:opacity-80 transition">
+                    Comenzar
+                </a>
+            </div>
+
+            <img src="/docs/assets/images/cards.png" alt="">
+        </div>
+    </section>
+
+    <section class="w-full bg-slate-950 text-white py-16 md:py-24 px-4 flex justify-center">
+        <div class="w-full max-w-6xl">
+
+            <!-- Badge -->
+            <div class="flex justify-center mb-10">
+                <span
+                    class="news-pill px-6 py-2 rounded-full text-xs sm:text-sm font-medium shadow-[0_12px_30px_rgba(59,130,246,0.5)]">
+                    News & Updates
+                </span>
+            </div>
+
+            <!-- Cards grid -->
+            <div class="grid gap-8 md:grid-cols-3">
+
+                <!-- Card 1 -->
+                <article class="card-border-cyan rounded-[40px] p-[2px] shadow-[0_25px_60px_rgba(15,23,42,0.95)]">
+                    <div class="h-full rounded-[38px] bg-gradient-to-b from-slate-950/95 via-slate-950/80 to-slate-950/60
+                 px-8 py-10 flex flex-col items-center text-center justify-between">
+                        <!-- Icon -->
+                        <div class="mb-8">
+                            <i class="fa-solid fa-rocket text-4xl md:text-5xl text-cyan-200 icon-glow-cyan"></i>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="space-y-4">
+                            <h3 class="text-lg md:text-xl font-semibold">
+                                ¡Nuevas Evoluciones de<br />
+                                Cartas ya están aquí!
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-200/80">
+                                Nuevas rutas de evolución añadidas en esta actualización
+                            </p>
+                        </div>
+
+                        <!-- Date -->
+                        <div class="mt-10 w-full flex justify-center">
+                            <div
+                                class="rounded-full border border-cyan-300/70 px-8 py-2 text-xs sm:text-sm text-cyan-100">
+                                18 Nov 2025
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="card-border-purple rounded-[40px] p-[2px] shadow-[0_25px_60px_rgba(15,23,42,0.95)]">
+                    <div class="h-full rounded-[38px] bg-gradient-to-b from-slate-950/95 via-violet-900/40 to-purple-900/60
+                 px-8 py-10 flex flex-col items-center text-center justify-between">
+                        <!-- Icon -->
+                        <div class="mb-8">
+                            <i
+                                class="fa-solid fa-shield-halved text-4xl md:text-5xl text-purple-200 icon-glow-purple"></i>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="space-y-4">
+                            <h3 class="text-lg md:text-xl font-semibold">
+                                Los Clubes de la<br />
+                                Comunidad Están Activos
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-200/80">
+                                Únete a clubes y conéctate con amigos
+                            </p>
+                        </div>
+
+                        <!-- Date -->
+                        <div class="mt-10 w-full flex justify-center">
+                            <div
+                                class="rounded-full border border-purple-300/70 px-8 py-2 text-xs sm:text-sm text-purple-100">
+                                10 Nov 2025
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="card-border-pink rounded-[40px] p-[2px] shadow-[0_25px_60px_rgba(15,23,42,0.95)]">
+                    <div class="h-full rounded-[38px] bg-gradient-to-b from-slate-950/95 via-rose-900/40 to-pink-900/60
+                 px-8 py-10 flex flex-col items-center text-center justify-between">
+                        <!-- Icon -->
+                        <div class="mb-8">
+                            <i class="fa-solid fa-trophy text-4xl md:text-5xl text-pink-200 icon-glow-pink"></i>
+                        </div>
+
+                        <!-- Text -->
+                        <div class="space-y-4">
+                            <h3 class="text-lg md:text-xl font-semibold">
+                                Aumento de Recompensas<br />
+                                Semanales del Desafío de Cartas
+                            </h3>
+                            <p class="text-xs sm:text-sm text-slate-200/80">
+                                Gana recompensas más grandes en los desafíos
+                            </p>
+                        </div>
+
+                        <!-- Date -->
+                        <div class="mt-10 w-full flex justify-center">
+                            <div
+                                class="rounded-full border border-pink-300/70 px-8 py-2 text-xs sm:text-sm text-pink-100">
+                                03 Nov 2025
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full bg-slate-950 text-white py-16 md:py-24 px-4 flex justify-center">
+        <div class="w-full max-w-4xl">
+
+            <!-- Gradient pill title -->
+            <div class="flex justify-center mb-10">
+                <span
+                    class="faq-pill px-6 py-2 rounded-full text-xs sm:text-sm font-medium shadow-[0_12px_30px_rgba(59,130,246,0.5)]">
+                    FAQ's
+                </span>
+            </div>
+
+            <div class="space-y-4">
+
+                <!-- ITEM 1 -->
+                <div class="faq-border rounded-2xl p-[2px]">
+                    <div class="faq-inner rounded-2xl px-6 py-5 md:px-8 md:py-6">
+                        <button onclick="toggleAccordion(1)"
+                            class="w-full cursor-pointer flex justify-between items-center gap-4" aria-expanded="false"
+                            aria-controls="content-1">
+                            <p class="text-sm md:text-base font-medium text-sky-50 text-left">
+                                ¿Cómo Puedo Conseguir Cartas?
+                            </p>
+                            <span
+                                class="flex h-9 w-9 items-center justify-center rounded-full border border-cyan-300/70 text-sm">
+                                <i id="icon-1"
+                                    class="fa-solid fa-plus text-cyan-100 transition-transform duration-300"></i>
+                            </span>
+                        </button>
+                        <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <p class="pt-4 text-xs sm:text-sm text-slate-100/90">
+                                Puedes Escanear Códigos QR Físicos O Comprar Paquetes Digitales
+                                Desde La Tienda De La Aplicación.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2 -->
+                <div class="faq-border rounded-2xl p-[2px]">
+                    <div class="faq-inner rounded-2xl px-6 py-5 md:px-8 md:py-6">
+                        <button onclick="toggleAccordion(2)"
+                            class="w-full cursor-pointer flex justify-between items-center gap-4" aria-expanded="false"
+                            aria-controls="content-2">
+                            <p class="text-sm md:text-base font-medium text-sky-50 text-left">
+                                ¿Qué Pasa Si Un Código Ya Ha Sido Usado?
+                            </p>
+                            <span
+                                class="flex h-9 w-9 items-center justify-center rounded-full border border-cyan-300/70 text-sm">
+                                <i id="icon-2"
+                                    class="fa-solid fa-plus text-cyan-100 transition-transform duration-300"></i>
+                            </span>
+                        </button>
+                        <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <p class="pt-4 text-xs sm:text-sm text-slate-100/90">
+                                Si un código ya fue utilizado, la app te avisará y no se añadirá
+                                una carta duplicada a tu colección.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3 -->
+                <div class="faq-border rounded-2xl p-[2px]">
+                    <div class="faq-inner rounded-2xl px-6 py-5 md:px-8 md:py-6">
+                        <button onclick="toggleAccordion(3)"
+                            class="w-full cursor-pointer flex justify-between items-center gap-4" aria-expanded="false"
+                            aria-controls="content-3">
+                            <p class="text-sm md:text-base font-medium text-sky-50 text-left">
+                                ¿Cómo Evoluciono Mis Cartas?
+                            </p>
+                            <span
+                                class="flex h-9 w-9 items-center justify-center rounded-full border border-cyan-300/70 text-sm">
+                                <i id="icon-3"
+                                    class="fa-solid fa-plus text-cyan-100 transition-transform duration-300"></i>
+                            </span>
+                        </button>
+                        <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <p class="pt-4 text-xs sm:text-sm text-slate-100/90">
+                                Completa desafíos, gana puntos y úsalos para evolucionar tus cartas
+                                a versiones más poderosas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 4 -->
+                <div class="faq-border rounded-2xl p-[2px]">
+                    <div class="faq-inner rounded-2xl px-6 py-5 md:px-8 md:py-6">
+                        <button onclick="toggleAccordion(4)"
+                            class="w-full cursor-pointer flex justify-between items-center gap-4" aria-expanded="false"
+                            aria-controls="content-4">
+                            <p class="text-sm md:text-base font-medium text-sky-50 text-left">
+                                ¿Cómo Funcionan Los Puntos?
+                            </p>
+                            <span
+                                class="flex h-9 w-9 items-center justify-center rounded-full border border-cyan-300/70 text-sm">
+                                <i id="icon-4"
+                                    class="fa-solid fa-plus text-cyan-100 transition-transform duration-300"></i>
+                            </span>
+                        </button>
+                        <div id="content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <p class="pt-4 text-xs sm:text-sm text-slate-100/90">
+                                Los puntos se obtienen jugando eventos y desafíos. Luego puedes
+                                canjearlos por recompensas, mejoras y evoluciones.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duplica este bloque para más preguntas si quieres -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-slate-950 text-sky-400 py-10 md:py-14 px-4 flex justify-center">
+        <div class="w-full max-w-6xl">
+            <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+                <!-- Col 1 -->
+                <div>
+                    <h4 class="text-sky-300 text-lg font-semibold mb-4">
+                        Atención al Cliente
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-sky-200 transition">Contáctanos</a></li>
+                        <li><a href="#" class="hover:text-sky-200 transition">Servicios</a></li>
+                        <li><a href="#" class="hover:text-sky-200 transition">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-sky-300 text-lg font-semibold mb-4">
+                        Acerca de SGLAPP
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-sky-200 transition">Protección de Marca</a></li>
+                        <li><a href="#" class="hover:text-sky-200 transition">Ética y Cumplimiento</a></li>
+                        <li><a href="#" class="hover:text-sky-200 transition">Personas y Carreras</a></li>
+                        <li><a href="#" class="hover:text-sky-200 transition">Accesibilidad</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-sky-300 text-lg font-semibold mb-4">
+                        Términos Legales
+                    </h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-sky-200 transition">Términos de Uso</a></li>
+                        <li><a href="#" class="hover:text-sky-200 transition">Política de Privacidad</a></li>
+                        <li><a href="#" class="hover:text-sky-200 transition">Configuración de Cookies</a></li>
+                        <li><a href="#" class="hover:text-sky-200 transition">Créditos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Social -->
+                <div>
+                    <h4 class="text-sky-300 text-lg font-semibold mb-4">
+                        Síguenos
+                    </h4>
+                    <div class="flex items-center gap-4 text-xl text-sky-300">
+                        <a href="#" class="hover:text-sky-100 transition">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="hover:text-sky-100 transition">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="hover:text-sky-100 transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="hover:text-sky-100 transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="hover:text-sky-100 transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Scripts -->
     <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="./docs/javascript/global.js"></script>
+
+
+    <script>
+        function toggleAccordion(index) {
+            const content = document.getElementById(`content-${index}`);
+            const icon = document.getElementById(`icon-${index}`);
+            const button = document.querySelector(`button[onclick="toggleAccordion(${index})"]`);
+            const allContents = document.querySelectorAll('[id^="content-"]');
+            const allIcons = document.querySelectorAll('[id^="icon-"]');
+            const allButtons = document.querySelectorAll('button[onclick^="toggleAccordion("]');
+
+            // Close all others
+            allContents.forEach((c) => { if (c !== content) c.style.maxHeight = '0'; });
+            allIcons.forEach((i) => {
+                if (i !== icon) {
+                    i.classList.remove('fa-minus');
+                    i.classList.add('fa-plus');
+                }
+            });
+            allButtons.forEach((b) => { if (b !== button) b.setAttribute('aria-expanded', 'false'); });
+
+            // Toggle current one
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0';
+                icon.classList.remove('fa-minus');
+                icon.classList.add('fa-plus');
+                button.setAttribute('aria-expanded', 'false');
+            } else {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-minus');
+                button.setAttribute('aria-expanded', 'true');
+            }
+        }
+
+        // Keep height correct when resizing
+        window.addEventListener('resize', () => {
+            document.querySelectorAll('[id^="content-"]').forEach((c) => {
+                if (c.style.maxHeight && c.style.maxHeight !== '0px') {
+                    c.style.maxHeight = c.scrollHeight + 'px';
+                }
+            });
+        });
+
+        // Open first item by default
+        window.addEventListener('DOMContentLoaded', () => {
+            toggleAccordion(1);
+        });
+    </script>
+
+
 </body>
+
 
 
 </html>
